@@ -1,0 +1,31 @@
+
+// cel sprawdzenie pelnoletnosci
+import java.util.Scanner; // importowanie klasy scanner do odczytu danych od uzytkownika
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    //program wypisuje to co jest w nawiasie
+		System.out.println("podaj wiek");
+	     // tworzenie obiektu Scanner do odczytu danych od uzytkownika
+		Scanner sc = new Scanner(System.in);
+		
+		int wiek = sc.nextInt(); // odczytanie wieku jako liczby calkowitej
+		// spradzenie wieku
+		if(wiek>18){
+		    // pelnoletnosc
+		    System.out.println("jestes pelnoletni");
+		}
+		else{
+		    //niepelnoletnosc
+		    System.out.println("jestes nie pelnoletni");
+		}
+		
+		
+		
+		
+		
+		  // Zamkniecie skanera
+        sc.close();
+	}
+}
